@@ -10,10 +10,7 @@ import random
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import Select
 
-
-from faker import Faker 
-
-fake = Faker()
+ 
 opts = Options()
 opts.headless = False
 opts.add_argument('log-level=3')
@@ -23,8 +20,7 @@ opts.add_argument('log-level=3')
 opts.add_argument('--disable-blink-features=AutomationControlled')
 
 
-email = "jatiellis6@an002.lordjanu.com"
-password = "admin123"
+ 
 
 def check_out():
     global browser
