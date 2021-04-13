@@ -94,7 +94,7 @@ def entar_email():
 
 def open_browser():
     global browser
-    browser = webdriver.Chrome(options=opts, executable_path=r"C:\Users\User\Downloads\chrome\chromedriver.exe")
+    browser = webdriver.Chrome(options=opts, executable_path=r"D:chromedriver.exe")
     browser.get('https://login.aliexpress.com/express/buyer_login_new.htm')
    
     element = wait(browser,15).until(EC.presence_of_element_located((By.XPATH, '/html/body/div[2]/div/section/div/div[2]/a')))
